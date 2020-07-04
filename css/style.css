@@ -77,6 +77,75 @@
 	padding: 0 20px;
 	margin: 0 auto;
 }
+/*SITE HEADER*/
+.site-header{
+	padding-top: 40px;
+	padding-bottom: 23px;
+	background-color: #f6f6f9;
+	border-top: 4px solid #295093;
+}
+.site-header__top{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 16px;
+	line-height: 19px;
+	align-items: center;
+}
+.site-header__actions{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	align-items: center;
+}
+/*EXCHANGE RATES*/
+.exchange-rates{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	color: #7a7a7a;
+	flex-wrap: wrap;
+	margin-left: 17px;
+	align-items: center;
+	list-style-type: none;
+}
+.exchange-rates__icon{
+	color: #285193;
+}
+.exchange-rates__item:not(:last-child){
+	margin-right: 26px;	
+}
+.search-button{
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.language-toggler{
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #fff;	
+}
+.telegram-sub{
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	font-weight: 500;
+	border-radius: 5px;
+	align-items: center;
+	text-decoration: none;
+	background-color: #1e96c8;
+	background-image: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+}
+
+
+
+
+
+
+
+
+
 
 
 
