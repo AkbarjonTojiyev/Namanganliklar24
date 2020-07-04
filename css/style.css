@@ -1,60 +1,86 @@
-/*Fonts*/
+/*FONTS*/
 @font-face {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 400;
   font-display: swap;
+  font-style: normal;
+  font-family: 'Rubik';
   src: url('../webfonts/rubik-v9-latin_cyrillic-regular.woff2') format('woff2'), 
        url('../webfonts/rubik-v9-latin_cyrillic-regular.woff') format('woff');
 }
 @font-face {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 500;
   font-display: swap;
+  font-style: normal;
+  font-family: 'Rubik';
   src: url('../webfonts/rubik-v9-latin_cyrillic-500.woff2') format('woff2'),
        url('../webfonts/rubik-v9-latin_cyrillic-500.woff') format('woff');
 }
 @font-face {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 700;
   font-display: swap;
+  font-style: normal;
+  font-family: 'Rubik';
   src: url('../webfonts/rubik-v9-latin_cyrillic-700.woff2') format('woff2'),
        url('../webfonts/rubik-v9-latin_cyrillic-700.woff') format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: italic;
   font-weight: 400;
   font-display: swap;
+  font-style: italic;
+  font-family: 'Roboto';
   src: url('../webfonts/roboto-v20-latin_cyrillic-italic.woff2') format('woff2'),
        url('../webfonts/roboto-v20-latin_cyrillic-italic.woff') format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-display: swap;
+  font-style: normal;
+  font-family: 'Roboto';
   src: url('../webfonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
        url('../webfonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-display: swap;
+  font-style: normal;
+  font-family: 'Roboto';
   src: url('../webfonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'),
        url('../webfonts/roboto-v20-latin_cyrillic-500.woff') format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: italic;
   font-weight: 500;
   font-display: swap;
+  font-style: italic;
+  font-family: 'Roboto';
   src: url('../webfonts/roboto-v20-latin_cyrillic-500italic.woff2') format('woff2'),
        url('../webfonts/roboto-v20-latin_cyrillic-500italic.woff') format('woff');
 }
+/*GENERAL STYLES*/
 .page{
+	height: 100%;
+	box-sizing: border-box;
+}
+*.
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+.page__body{
+	height: 100%;
+	color: #434343;
+	font-size: 15px;
+	line-height: 18px;
 	font-family: 'Rubik', sans-serif;
 }
+.container{
+	max-width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
