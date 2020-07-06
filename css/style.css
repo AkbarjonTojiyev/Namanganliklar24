@@ -104,6 +104,9 @@
 	background-color: #fff;
 	box-shadow: 0 2px 6px rgba(202, 202, 202, 0.25)
 }
+.site-header__logo{
+	margin-right: 17px;
+}
 /*EXCHANGE RATES*/
 .exchange-rates{
 	margin: 0;
@@ -124,10 +127,16 @@
 	margin-right: 26px;	
 }
 .search-button{
-	padding: 8px;
+	padding: 0;
 	border: none;
 	border-radius: 5px;
 	background-color: #fff;
+}
+.search-button__wrapper{
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .search-button__margin{
 	margin-right: 22px;
@@ -152,8 +161,24 @@
 	background-color: #1e96c8;
 	background-image: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
 }
-
-
+.telegram-sub:hover{
+	background-color: #1e96c8;
+	background-image: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 85.96%);	
+}
+.telegram-sub__img{
+	margin-right: 7px;
+}
+.language-toggler__img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+.language-toggler__wrapper{
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
 
 
 
