@@ -102,6 +102,9 @@
 	margin-left: auto;
 	align-items: center;
 }
+.site-header__toggler{
+	display: none;
+}
 .logo{
 	display: flex;
 	padding: 4px 8px;
@@ -226,7 +229,10 @@
 	margin: 5px 12px;
 }
 .sitenav__item:not(:last-child){
+}
+.sitenav__item{
 	margin-right: 28px;
+
 }
 .sitenav__link{
 	display: block;
@@ -246,7 +252,7 @@
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 1000px) {
+@media (max-width: 1000px){
 	.site-header{
 		padding-top: 25px;
 	}
@@ -261,7 +267,10 @@
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px){
+	.site-header__top{
+		margin-bottom: 20px;
+	}
 	.exchange-rates{
 		font-size: 14px;
 		line-height: 17px;
@@ -276,7 +285,115 @@
 	}
 }
 
+@media (max-width: 750px){
+	.page__body{
+		margin-top: 85px;
+	}
+	.site-header{
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		position: fixed;
+		padding: 20px 0;
+	}
+	.site-header__logo{
+		margin-right: 0;
+	}
+	.site-header__top{
+		margin-bottom: 0;
+	}
+	.site-header__toggler{
+		position: relative;
+		z-index: 16;
+		border: none;
+		padding: 10px;
+		display: block;
+		cursor: pointer;
+		font-weight: 700;
+		border-radius: 5px;
+		background-color: #fff;
+		transition: box-shadow 0.3s ease;
+	}
+	.exchange-rates,
+	.search-button,
+	.language-toggler,
+	.telegram-sub{
+		display: none;
+	}
+	.sitenav{
+		margin-bottom: 0;
+		transform: translateX(120%);
+		transition: transform 0.3s ease;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		position: fixed;
+		width: 65%;
+		z-index: 15;
+		border-radius: 0;
+		box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+		animation: sitenav-slide-out 0.3s ease 1 forwards;
+	}
+	.top-banner{
+		display: none;
+	}
+	.sitenav--open{
+		display: block;
+		/*transform: translateX(120%);*/
+		animation: sitenav-slide-in 0.3s ease 1 forwards;
+	}
+	.sitenav__list{
+		padding: 20px;
+		padding-top: 82px;
+		align-items: flex-end;
+		flex-direction: column;
+	}
+	.sitenav__item{
+		width: 100%;
+		margin: 0 5px;
+	}
+	.sitenav__item:not(:last-child){
+		border-bottom: 1px solid #515151;
+	}
+	.sitenav__link{
+		padding: 10px 20px;
+		text-align: right;
+		transition: background-color 0.3s ease,
+					color 0.3s ease;
+	}
+	.sitenav__link:active{
+		background-color: #295091;
+		color: #fff;
 
+	}
+}
+@media (max-width: 500px) {
+	.logo__img{
+		width: 202px;
+	}
+	.sitenav{
+		width: 80%;
+	}
+}
+
+/*KEYFRAMES*/
+@keyframes sitenav-slide-in {
+	from{
+		transform: translateX(120%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes sitenav-slide-out {
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(120%);
+	}
+}
 
 
 
