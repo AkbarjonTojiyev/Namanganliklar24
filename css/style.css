@@ -250,7 +250,30 @@
 	width: 100%;
 	height: auto;
 }
-
+/*SITE-FOOTER*/
+.site-footer{
+	color: #fff;
+	padding: 18px 0;
+	font-size: 14px;
+	line-height: 17;
+	background-color: #295093;
+}
+.site-footer__top{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.site-footer__logo{
+	display: flex;
+	padding: 10px;
+	margin-right: auto;
+	border-radius: 5px;
+	background-color: #133C82;
+}
+.site-footer__text{
+	margin: 0;
+	margin-right: 17px;
+}
 /*MEDIA QUERIES*/
 @media (max-width: 1000px){
 	.site-header{
