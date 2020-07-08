@@ -66,6 +66,8 @@
 	box-sizing: inherit;
 }
 .page__body{
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	color: #434343;
 	font-size: 15px;
@@ -257,6 +259,15 @@
 	width: 100%;
 	height: auto;
 }
+
+/*MAIN CONTENT*/
+.main-content{
+	flex-grow: 1;
+	padding-top: 22px;
+	padding-bottom: 38px;
+}
+
+
 /*SITE-FOOTER*/
 .site-footer{
 	color: #fff;
