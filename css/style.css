@@ -398,6 +398,7 @@
 	line-height: 20px;
 }
 .news-grid__link{
+	display: inline-block;
 	color: #202020;
 	text-decoration: none;
 	transition: color 0.3s ease;
@@ -412,6 +413,47 @@
 }
 .news-grid__item:hover .news-grid__link {
 	color: #295091;
+}
+
+/*NOTIFICATIONS*/
+.notifications{
+	display: flex;
+	align-items: center;
+	padding: 25px 35px;
+	border-radius: 5px;
+	background-color: rgba(239, 186, 84, 0.18);
+}
+.notifications::before{
+	content: "";
+	width: 31px;
+	height: 35px;
+	background: url("../img/icon-new-notification.svg") no-repeat center center / contain; 
+}
+.notifications__heading{
+	margin: 0;
+	margin-right: auto;
+	margin-left: 17px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+}
+.notifications__button {
+	padding: 8px 12px;
+	border: none;
+	border-radius: 5px;
+	background-color: #fe5c28;
+	background-image: linear-gradient(90deg, #fe5c28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+	color: #fff;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	transition: box-shadow 0.3s ease;
+	white-space: nowrap;
+}
+.notifications__button:hover {
+	cursor: pointer;
+	box-shadow: 10px 10px 15px rgba(202, 202, 202, 0.25)
 }
 /*SITE-FOOTER*/
 .site-footer{
@@ -559,6 +601,20 @@
 		margin-top: 3px;
 		margin-bottom: 3px;
 	}
+	.notifications{
+		padding: 20px;
+	}
+	.notifications::before{
+		display: none;
+	}
+	.notifications__heading {
+		margin-left: 0;
+	}
+	.notifications__heading,
+	.notifications__button{
+		font-size: 17px;
+		line-height: 20px;
+	}
 	.site-footer__about,
 	.site-footer__nav{
 		width: 100%;
@@ -680,7 +736,21 @@
 		text-align: right;
 	}
 }
-@media (max-width: 500px) {
+@media (max-width: 635px) {
+	.notifications {
+		flex-wrap: wrap;
+	}
+	.notifications__heading {
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.notifications__button{
+		width: 100%;
+		text-align: center;
+	}
+}
+@media (max-width: 550px) {
 	.covid-info::before {
 		margin-right: 0;
 	}
@@ -696,6 +766,12 @@
 	}
 	.sitenav{
 		width: 80%;
+	}
+	.notifications__heading,
+	.notifications__button
+	{
+		font-size: 15px;
+		line-height: 18px;
 	}
 	.site-footer__top{
 		flex-direction: column;
