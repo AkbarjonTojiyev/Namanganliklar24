@@ -414,12 +414,16 @@
 .news-grid__item:hover .news-grid__link {
 	color: #295091;
 }
+.news-grid__date {
+	display: block;
+}
 
 /*NOTIFICATIONS*/
 .notifications{
 	display: flex;
 	align-items: center;
 	padding: 25px 35px;
+	margin-bottom: 38px;
 	border-radius: 5px;
 	background-color: rgba(239, 186, 84, 0.18);
 }
@@ -454,6 +458,104 @@
 .notifications__button:hover {
 	cursor: pointer;
 	box-shadow: 10px 10px 15px rgba(202, 202, 202, 0.25)
+}
+
+/*LATEST-POPULAR-NEWS*/
+.latest-popular-news {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+.news-list {
+	width: 794px;
+}
+.news-list__heading {
+	margin-top: 0;
+	font-weight: 500;
+	color: #000000;
+	font-size: 20px;
+	line-height: 24px;
+}
+.news-list__list {
+	padding: 0;
+	margin-top: 0;
+	list-style-type: none;
+}
+.news-list__item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.news-list__item:not(:last-child) {
+	margin-bottom: 18px;
+
+}
+.news-list__img {
+	width: 252px;
+	height: 143px;
+	margin-right: 20px;
+	object-fit: cover;
+}
+.news-list__body {
+	width: 522px;
+}
+.news-list__title {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 17px;
+	line-height: 20px;
+}
+.news-list__link {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+.news-list__link::before {
+	content: "";
+	display: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.news-list__item:hover .news-list__link {
+	color: #295091;
+}
+.news-list__text {
+	margin-bottom: 14px;
+}
+.news-list__date-wrapper {
+	display: flex;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7688a4
+}
+.news-list__date-icon {
+	width: 18px;
+	height: 20px;
+	margin-right: 2px;
+}
+.news-list__more-wrapper {
+	text-align: center;
+}
+.news-list__more-button {
+	padding: 10px 32px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 500;
+	background-color: #295093;
+	color: #ffffff;
+	transition: background-color 0.3s ease;
+}
+.news-list__more-button:hover {
+	background-color: rgba(41, 80, 147, 0.8);
 }
 /*SITE-FOOTER*/
 .site-footer{
