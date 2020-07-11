@@ -259,7 +259,9 @@
 	color: #515151;
 	text-decoration: none;
 }
-.sitenav__link:hover{
+.sitenav__link:hover,
+.sitenav__item--active,
+.sitenav__link{
 	color: #295091;
 }
 .top-banner__link{
