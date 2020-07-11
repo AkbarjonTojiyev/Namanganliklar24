@@ -595,6 +595,7 @@
 /*POPULAR-NEWS-BANNER*/
 .popular-news-banner {
 	width: 386px;
+	margin-bottom: 20px;
 }
 
 /*POPULAR-NEWS*/
@@ -651,8 +652,39 @@
 }
 .sidebar-banner__img {
 	display: block;
+	width: 100%;
 }
 
+/*SITE-APP*/
+.site-app {
+	display: flex;
+	align-items: center;
+	padding: 65px 20px 65px 245px;
+	background: #f6f6f9 url("../img/site-app-bg.png") no-repeat 20px bottom;
+}
+.site-app__body {
+	width: 520px;
+	margin-right: auto;
+}
+.site-app__heading {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #295093;
+}
+.site-app__text {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 500;
+	color: #333333;
+}
+.site-app__link {
+	display: flex;
+	margin-left: 20px;
+	border-radius: 5px;
+}
 
 /*SITE-FOOTER*/
 .site-footer{
@@ -757,6 +789,20 @@
 		width: calc(386 / 1240 * 100%);
 	}
 }
+@media (max-width: 1200px) {
+	.site-app {
+		flex-wrap: wrap;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.site-app__body {
+		width: 100%;
+	}
+	.site-app__link {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+}
 @media (max-width: 1150px) {
 	.covid-info__heading {
 		margin-right: 40px;
@@ -811,6 +857,20 @@
 	}
 }
 
+@media (max-width: 920px) {
+	.news-list,
+	.popular-news-banner {
+		width: 100%;
+	}
+	.popular-news-banner {
+		margin-top: 20px;
+	}
+	.sidebar-banner__img {
+		width: 100%;
+		height: auto;
+	}
+}
+
 @media (max-width: 850px){
 	.site-header__top{
 		margin-bottom: 20px;
@@ -841,6 +901,20 @@
 		font-size: 17px;
 		line-height: 20px;
 	}
+	.site-app {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		-webkit-background-size: cover;
+		background-size: 150px;
+	}
+	.site-app__heading {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.site-app__text {
+		font-size: 16px;
+		line-height: 20px;
+	}
 	.site-footer__about,
 	.site-footer__nav{
 		width: 100%;
@@ -851,16 +925,6 @@
 	.site-footer__nav{
 		margin-bottom: 20px;
 
-	}
-}
-
-@media (max-width: 920px) {
-	.news-list,
-	.popular-news-banner {
-		width: 100%;
-	}
-	.popular-news-banner {
-		margin-top: 20px;
 	}
 }
 
@@ -959,6 +1023,10 @@
 	.covid-info__stat:not(:last-child){
 		border-bottom: 2px solid #f4ccd1;
 	}
+	.site-app {
+		padding: 30px;
+		background-image: none;
+	}
 	.site-footer__top{
 		flex-wrap: wrap;
 		align-items: stretch;
@@ -1010,7 +1078,7 @@
 		margin-bottom: 5px;
 	}
 	.sidebar-banner__img {
-		width: 100%;
+		/*width: 100%;*/
 		height: auto;
 	}
 }
@@ -1026,6 +1094,13 @@
 	{
 		font-size: 15px;
 		line-height: 18px;
+	}
+	.site-app {
+		justify-content: space-around;
+	}
+	.site-app__link {
+		max-width: 45%;
+		margin: 0;
 	}
 	.site-footer__top{
 		flex-direction: column;
