@@ -162,6 +162,7 @@
 	border-radius: 5px;
 	color: #ffffff;
 	background-color: #285193;
+	font-weight: 500;
 }
 .search-button{
 	padding: 0;
@@ -761,6 +762,111 @@
 	color: #28508e;
 }
 
+/*FORM-INFO-WRAPPER*/
+.form-info-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+/*CONTACT-FORM*/
+.contact-form {
+	width: calc(600/1240*100%);
+}
+.contact-form__group {
+	margin-bottom: 20px;
+}
+.contact-form__textarea {
+	min-height: 307px;
+	resize: vertical;
+}
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__file-input {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	border: 2px solid rgba(40, 81, 147, 0.3);
+	border-radius: 5px;
+	background-color: rgba(241, 241, 241, 0.3);
+}
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+	border-color: #285193;
+	box-shadow: none;
+}
+.contact-form__group--small {
+	width: 220px;
+}
+.contact-form__group--captcha {
+	position: relative;
+	z-index: 1;
+}
+.contact-form__group--captcha-img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateX(160%) translateY(-50%);
+}
+.contact-form__file-input-label {
+	display: flex;
+	align-items: center;
+	color: #888888;
+}
+.contact-form__file-icon {
+	margin-left: 11px;
+}
+
+/*CONTACT-INFO*/
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	width: calc(510/1240*100%);
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #bcc3cd;
+	border-radius: 5px;
+	box-shadow: -12px 8px 9px rgba(57, 57, 57, 0.25);
+
+}
+.contact-info__logo {
+	align-self: flex-end;
+	margin-bottom: 20px;
+}
+.contact-info__group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 18px;
+	line-height: 21px;
+	color: #888888;
+}
+.contact-info__group:not(:last-child) {
+	margin-bottom: 20px;
+
+}
+.contact-info__socials {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.contact-info__socials-item {
+	margin-left: 13px;
+}
+.contact-info__socials-link {
+	display: block;
+}
+.contact-info__socials:hover {
+	opacity: 0.8;
+}
+.contact-info__heading,
+.contact-info__value {
+	margin: 0;
+}
 /*SITE-FOOTER*/
 .site-footer{
 	color: #fff;
@@ -993,6 +1099,14 @@
 	.site-app__text {
 		font-size: 16px;
 		line-height: 20px;
+	}
+	.contact-form {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.contact-info {
+		width: 100%;
+		box-shadow: none;
 	}
 	.site-footer__about,
 	.site-footer__nav{
